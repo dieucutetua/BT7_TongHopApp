@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/button2">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="20dp">
+                <TextView
+                    android:id="@+id/Sigin"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:text="SIGN IN"
+                    android:textSize="26dp"
+                    android:textStyle="bold"
+                    android:drawableRight="@drawable/logo"/>
+            <EditText
+                android:id="@+id/txtUserName1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="15"
+                android:hint="UserName"
+                android:textStyle="bold"
+                android:drawablePadding="20dp"
+                android:importantForAutofill="no"
+                android:inputType="textPersonName"
+                android:textSize="20sp"
+                android:drawableLeft="@drawable/ic_baseline_people_24"/>
+            <EditText
+                android:id="@+id/txtPassword1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:ems="15"
+                android:hint="Password"
+                android:importantForAutofill="no"
+                android:inputType="textPassword"
+                android:textSize="20sp"
+                android:drawableLeft="@drawable/ic_baseline_vpn_key_24"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Forgot your password ?"
+                android:layout_marginBottom="20dp"
+                android:textStyle="italic"
+                android:textColor="@color/purple_500"/>
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnSignup1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/holo_orange_dark"
+            android:text="Sign Up"
+            app:cornerRadius="50dp" />
+        <Button
+            android:id="@+id/btnSignin1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:text="Sign In"
+            app:cornerRadius="50dp" />
+    </LinearLayout>
+
+
+</LinearLayout>
