@@ -3,9 +3,27 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/KTLTTDTDD/BTGK_TH/app/src/main/res/drawable/abc.xml" value="0.1765" />
         <entry key="..\:/KTLTTDTDD/BTGK_TH/app/src/main/res/drawable/bttn3.xml" value="0.1765" />
         <entry key="..\:/KTLTTDTDD/BTGK_TH/app/src/main/res/drawable/button2.xml" value="0.1765" />
         <entry key="..\:/KTLTTDTDD/BTGK_TH/app/src/main/res/drawable/gradientbackground.xml" value="0.1765" />
+        <entry key="..\:/KTLTTDTDD/BTGK_TH/app/src/main/res/drawable/gradienthomelist1.xml" value="0.1765" />
+        <entry key="..\:/KTLTTDTDD/BTGK_TH/app/src/main/res/drawable/gradienthomelist2.xml" value="0.1765" />
+        <entry key="..\:/KTLTTDTDD/BTGK_TH/app/src/main/res/drawable/gradienthomelist3.xml" value="0.1765" />
+        <entry key="..\:/KTLTTDTDD/BTGK_TH/app/src/main/res/drawable/gradienthomelist4.xml" value="0.1765" />
+        <entry key="..\:/KTLTTDTDD/BTGK_TH/app/src/main/res/drawable/gradienthomelist5.xml" value="0.1765" />
+        <entry key="..\:/KTLTTDTDD/BTGK_TH/app/src/main/res/drawable/gradientitem.xml" value="0.1765" />
+        <entry key="..\:/KTLTTDTDD/BTGK_TH/app/src/main/res/drawable/gradientitemprofile.xml" value="0.1765" />
+        <entry key="..\:/KTLTTDTDD/BTGK_TH/app/src/main/res/drawable/gradientitemshome.xml" value="0.1765" />
+        <entry key="..\:/KTLTTDTDD/BTGK_TH/app/src/main/res/drawable/gradientsignin.xml" value="0.1765" />
+        <entry key="..\:/KTLTTDTDD/BTGK_TH/app/src/main/res/drawable/gradientsignup1.xml" value="0.1765" />
+        <entry key="..\:/KTLTTDTDD/BTGK_TH/app/src/main/res/drawable/home_account.xml" value="0.1765" />
+        <entry key="..\:/KTLTTDTDD/BTGK_TH/app/src/main/res/drawable/home_add.xml" value="0.1765" />
+        <entry key="..\:/KTLTTDTDD/BTGK_TH/app/src/main/res/drawable/home_address.xml" value="0.1765" />
+        <entry key="..\:/KTLTTDTDD/BTGK_TH/app/src/main/res/drawable/home_help_item.xml" value="0.1765" />
+        <entry key="..\:/KTLTTDTDD/BTGK_TH/app/src/main/res/drawable/home_list_item.xml" value="0.1765" />
+        <entry key="..\:/KTLTTDTDD/BTGK_TH/app/src/main/res/drawable/home_person.xml" value="0.1765" />
+        <entry key="..\:/KTLTTDTDD/BTGK_TH/app/src/main/res/drawable/homeitem.xml" value="0.1765" />
         <entry key="..\:/KTLTTDTDD/BTGK_TH/app/src/main/res/drawable/ic_baseline_email_24.xml" value="0.1765" />
         <entry key="..\:/KTLTTDTDD/BTGK_TH/app/src/main/res/drawable/ic_baseline_format_align_justify_24.xml" value="0.1765" />
         <entry key="..\:/KTLTTDTDD/BTGK_TH/app/src/main/res/drawable/ic_baseline_forum_24.xml" value="0.1765" />
@@ -16,17 +34,22 @@
         <entry key="..\:/KTLTTDTDD/BTGK_TH/app/src/main/res/drawable/ic_baseline_people_outline_24.xml" value="0.1765" />
         <entry key="..\:/KTLTTDTDD/BTGK_TH/app/src/main/res/drawable/ic_baseline_person_add_24.xml" value="0.1765" />
         <entry key="..\:/KTLTTDTDD/BTGK_TH/app/src/main/res/drawable/ic_baseline_phone_android_24.xml" value="0.1765" />
+        <entry key="..\:/KTLTTDTDD/BTGK_TH/app/src/main/res/drawable/ic_baseline_report_problem_24.xml" value="0.1765" />
+        <entry key="..\:/KTLTTDTDD/BTGK_TH/app/src/main/res/drawable/ic_wave2.xml" value="0.1765" />
+        <entry key="..\:/KTLTTDTDD/BTGK_TH/app/src/main/res/drawable/ic_wave3.xml" value="0.1765" />
+        <entry key="..\:/KTLTTDTDD/BTGK_TH/app/src/main/res/drawable/ic_wave__2_.xml" value="0.33" />
+        <entry key="..\:/KTLTTDTDD/BTGK_TH/app/src/main/res/drawable/profileitem.xml" value="0.1765" />
         <entry key="..\:/KTLTTDTDD/BTGK_TH/app/src/main/res/layout/activity_form_list_view.xml" value="0.15555555555555556" />
         <entry key="..\:/KTLTTDTDD/BTGK_TH/app/src/main/res/layout/activity_hom_list_view.xml" value="0.15555555555555556" />
-        <entry key="..\:/KTLTTDTDD/BTGK_TH/app/src/main/res/layout/activity_home.xml" value="0.15555555555555556" />
-        <entry key="..\:/KTLTTDTDD/BTGK_TH/app/src/main/res/layout/activity_home_list.xml" value="0.15555555555555556" />
+        <entry key="..\:/KTLTTDTDD/BTGK_TH/app/src/main/res/layout/activity_home.xml" value="0.2" />
+        <entry key="..\:/KTLTTDTDD/BTGK_TH/app/src/main/res/layout/activity_home_list.xml" value="0.25" />
         <entry key="..\:/KTLTTDTDD/BTGK_TH/app/src/main/res/layout/activity_list_view.xml" value="0.15555555555555556" />
         <entry key="..\:/KTLTTDTDD/BTGK_TH/app/src/main/res/layout/activity_list_view2.xml" value="0.15555555555555556" />
         <entry key="..\:/KTLTTDTDD/BTGK_TH/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/KTLTTDTDD/BTGK_TH/app/src/main/res/layout/activity_main2.xml" value="0.15555555555555556" />
-        <entry key="..\:/KTLTTDTDD/BTGK_TH/app/src/main/res/layout/activity_profile.xml" value="0.15555555555555556" />
+        <entry key="..\:/KTLTTDTDD/BTGK_TH/app/src/main/res/layout/activity_profile.xml" value="0.2" />
         <entry key="..\:/KTLTTDTDD/BTGK_TH/app/src/main/res/layout/activity_sign_up.xml" value="0.22" />
-        <entry key="..\:/KTLTTDTDD/BTGK_TH/app/src/main/res/layout/items_listview.xml" value="0.15555555555555556" />
+        <entry key="..\:/KTLTTDTDD/BTGK_TH/app/src/main/res/layout/items_listview.xml" value="0.25" />
       </map>
     </option>
   </component>

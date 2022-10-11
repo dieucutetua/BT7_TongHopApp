@@ -3,16 +3,18 @@ package com.example.taoapptonghop;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.media.Image;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
     EditText editUserName, editPassword;
-    Button buttonSignUp, buttonSignIn;
+    ImageView buttonSignUp, buttonSignIn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,8 +23,8 @@ public class MainActivity extends AppCompatActivity {
 
         editUserName =(EditText)findViewById(R.id.txtUserName1);
         editPassword = (EditText) findViewById(R.id.txtPassword1);
-        buttonSignIn = (Button) findViewById(R.id.btnSignin1);
-        buttonSignUp = (Button) findViewById(R.id.btnSignup1);
+        buttonSignIn = (ImageView) findViewById(R.id.btnSignin1);
+        buttonSignUp = (ImageView) findViewById(R.id.btnSignup1);
 
         buttonSignIn.setOnClickListener(new View.OnClickListener() {
             @Override

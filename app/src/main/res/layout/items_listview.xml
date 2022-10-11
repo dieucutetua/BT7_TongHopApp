@@ -2,39 +2,45 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:background="@drawable/gradientitem">
 
-    <ImageView
+    <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/imgAvatar"
-        android:layout_width="120dp"
-        android:layout_height="120dp" />
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:padding="10dp"/>
 
     <TextView
         android:id="@+id/tv_name"
-        android:paddingLeft="20dp"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/imgAvatar"
         android:hint="Name"
-        android:textSize="30dp"
-        android:layout_toRightOf="@+id/imgAvatar"/>
+        android:paddingLeft="20dp"
+        android:textSize="25dp" />
 
     <TextView
         android:id="@+id/tv_infor"
-        android:layout_width="190dp"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/tv_name"
         android:layout_toRightOf="@+id/imgAvatar"
         android:hint="Informtion of item"
+        android:fontFamily="sans-serif-condensed-light"
         android:paddingLeft="20dp"
-        android:textSize="20dp" />
+        android:textSize="15dp" />
 
     <TextView
-        android:id="@+id/tv_gia"
-        android:layout_width="wrap_content"
+        android:id="@+id/tv_vitri"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/tv_infor"
-        android:layout_toRightOf="@+id/tv_infor"
-        android:hint="$"
-        android:textSize="30dp" />
+        android:layout_marginRight="20dp"
+        android:textAlignment="textEnd"
+        android:hint="Vị trí "
+        android:textSize="10dp" />
+
 
 </RelativeLayout>

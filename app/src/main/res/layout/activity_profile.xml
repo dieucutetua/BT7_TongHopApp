@@ -36,12 +36,12 @@
             android:background="@drawable/gradientbackground"
             android:orientation="vertical">
 
-            <ImageView
+            <de.hdodenhof.circleimageview.CircleImageView
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="50dp"
-                app:srcCompat="@drawable/profile" />
+                android:src="@drawable/profile"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -160,10 +160,11 @@
                 android:background="@color/white"
                 android:src="@drawable/ic_baseline_email_24"/>
 
-            <Button
+            <TextView
+                android:background="@drawable/abc"
                 android:layout_width="250dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
+                android:layout_height="match_parent"
+                android:gravity="center"
                 android:backgroundTint="@color/white"
                 android:paddingLeft="20dp"
                 android:text="lethuandieu@gmail.com"
@@ -186,10 +187,11 @@
                 android:background="@color/white"
                 android:src="@drawable/ic_baseline_library_books_24"/>
 
-            <Button
+            <TextView
                 android:layout_width="250dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
+                android:background="@drawable/abc"
+                android:layout_height="match_parent"
+                android:gravity="center"
                 android:backgroundTint="@color/white"
                 android:paddingLeft="20dp"
                 android:text="2050531200118"
@@ -212,10 +214,13 @@
                 android:layout_marginRight="10dp"
                 android:src="@drawable/ic_baseline_phone_android_24"/>
 
-            <Button
-                android:layout_width="250dp"
-                android:layout_height="wrap_content"
+            <TextView
+
                 android:layout_gravity="center"
+                android:background="@drawable/abc"
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
                 android:backgroundTint="@color/white"
                 android:paddingLeft="20dp"
                 android:text="+0123 4567 89"
@@ -237,10 +242,13 @@
                 android:background="@color/white"
                 android:src="@drawable/ic_baseline_person_add_24"/>
 
-            <Button
-                android:layout_width="250dp"
-                android:layout_height="wrap_content"
+            <TextView
+
                 android:layout_gravity="center"
+                android:background="@drawable/abc"
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
                 android:backgroundTint="@color/white"
                 android:paddingLeft="20dp"
                 android:text="Add to friend"
@@ -262,9 +270,11 @@
                 android:layout_marginRight="10dp"
                 android:src="@drawable/ic_baseline_forum_24"/>
 
-            <Button
+            <TextView
                 android:layout_width="250dp"
-                android:layout_height="wrap_content"
+                android:background="@drawable/abc"
+                android:layout_height="match_parent"
+                android:gravity="center"
                 android:layout_gravity="center"
                 android:backgroundTint="@color/white"
                 android:paddingLeft="20dp"

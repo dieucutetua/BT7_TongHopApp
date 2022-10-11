@@ -42,12 +42,12 @@ public class Adapter extends BaseAdapter {
 
         TextView textView1 = view.findViewById(R.id.tv_name);
         TextView textView2 = view.findViewById(R.id.tv_infor);
-        TextView textView3 = view.findViewById(R.id.tv_gia);
+        TextView textView3 = view.findViewById(R.id.tv_vitri);
         ImageView imageView = view.findViewById(R.id.imgAvatar);
 
         textView1.setText(thuVien.getTenSach());
         textView2.setText(thuVien.getChitiet());
-        textView3.setText(thuVien.getGia());
+        textView3.setText(thuVien.getVitri());
         imageView.setImageResource(thuVien.getHinh());
         return view;
     }

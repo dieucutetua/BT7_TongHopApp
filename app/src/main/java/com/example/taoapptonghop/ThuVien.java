@@ -3,13 +3,13 @@ package com.example.taoapptonghop;
 public class ThuVien {
     private String tenSach;
     private String chitiet;
-    private String gia;
+    private String vitri;
     private int hinh;
 
-    public ThuVien(String tenSach, String chitiet, String gia, int hinh) {
+    public ThuVien(String tenSach, String chitiet, String vitri, int hinh) {
         this.tenSach = tenSach;
         this.chitiet = chitiet;
-        this.gia = gia;
+        this.vitri = vitri;
         this.hinh = hinh;
     }
 
@@ -29,12 +29,12 @@ public class ThuVien {
         this.chitiet = chitiet;
     }
 
-    public String getGia() {
-        return gia;
+    public String getVitri() {
+        return vitri;
     }
 
-    public void setGia(String gia) {
-        this.gia = gia;
+    public void setVitri(String vitri) {
+        this.vitri = vitri;
     }
 
     public int getHinh() {
