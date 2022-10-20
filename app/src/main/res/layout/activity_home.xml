@@ -188,21 +188,35 @@
                     android:fontFamily="sans-serif-condensed-medium"/>
             </LinearLayout>
         </LinearLayout>
-
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Please choose ?"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"/>
 
     </LinearLayout>
-        <RelativeLayout
+        <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/ic_wave3">
-            <TextView
+        >
+            <com.google.android.material.bottomnavigation.BottomNavigationView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:text="Please choose ?"
-                android:textSize="30dp"
-                android:textStyle="bold" />
-        </RelativeLayout>
+                android:layout_height="wrap_content"
+                android:id="@+id/bottomNav"
+                android:background="@drawable/ic_wave3"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:menu="@menu/button_nav_menu"
+                app:itemIconTint="@color/purple_500"
+                app:itemTextColor="@color/black">
+
+            </com.google.android.material.bottomnavigation.BottomNavigationView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
 
 
 </LinearLayout>

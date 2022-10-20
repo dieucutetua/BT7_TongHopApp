@@ -13,6 +13,9 @@ public class ThuVien {
         this.hinh = hinh;
     }
 
+    public ThuVien() {
+    }
+
     public String getTenSach() {
         return tenSach;
     }

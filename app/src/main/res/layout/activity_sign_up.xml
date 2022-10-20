@@ -5,123 +5,145 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:orientation="vertical"
-    android:gravity="center"
-    android:background="@drawable/thuvien">
+    android:orientation="vertical">
 
-    <androidx.cardview.widget.CardView
-        android:layout_width="300dp"
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:cardCornerRadius="50dp">
-        <LinearLayout
-            android:layout_width="wrap_content"
+        android:gravity="center">
+        <androidx.cardview.widget.CardView
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="20dp">
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/logo2"
-                android:layout_gravity="center"
-                />
-            <EditText
-                android:id="@+id/txtFullName"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:ems="25"
-                android:hint="FullName"
-                android:importantForAutofill="no"
-                android:inputType="textPersonName"
-                android:textStyle="italic"
-                android:textSize="15dp"
-                android:drawablePadding="20dp"
-                android:drawableLeft="@drawable/ic_baseline_people_24"/>
-            <EditText
-                android:id="@+id/txtUserName"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:ems="25"
-                android:hint="UserName"
-                android:textStyle="italic"
-                android:drawablePadding="20dp"
-                android:importantForAutofill="no"
-                android:inputType="textPersonName"
-                android:textSize="15dp"
-                android:drawableLeft="@drawable/ic_baseline_people_24"/>
-            <EditText
-                android:id="@+id/txtPassword"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textStyle="italic"
-                android:drawablePadding="20dp"
-                android:ems="25"
-                android:hint="Password"
-                android:importantForAutofill="no"
-                android:inputType="textPassword"
-                android:textSize="15dp"
-                android:drawableLeft="@drawable/ic_baseline_vpn_key_24"/>
-            <EditText
-                android:id="@+id/txtConfirmPass"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"
-                android:textStyle="italic"
-                android:ems="25"
-                android:hint="Confirm Password"
-                android:importantForAutofill="no"
-                android:drawablePadding="20dp"
-                android:inputType="textPassword"
-                android:textSize="15dp"
-                android:drawableLeft="@drawable/ic_baseline_vpn_key_24"/>
-
-            <EditText
-                android:id="@+id/txtEmail"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:drawableLeft="@drawable/ic_baseline_email_black"
-                android:drawablePadding="20dp"
-                android:ems="25"
-                android:textStyle="italic"
-                android:hint="Email"
-                android:importantForAutofill="no"
-                android:inputType="textEmailAddress"
-                android:textSize="15dp" />
-
-            <EditText
-                android:id="@+id/txtPhone"
-                android:drawablePadding="20dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:ems="25"
-                android:hint="PhoneNumber"
-                android:importantForAutofill="no"
-                android:inputType="textPersonName"
-                android:textSize="15dp"
-                android:textStyle="italic"
-                android:drawableLeft="@drawable/ic_baseline_local_phone_24"/>
+            app:cardCornerRadius="50dp">
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center">
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
                 <ImageView
-                    android:id="@+id/btnSignin2"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:src="@drawable/signup_signin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/logo2"
+                    android:layout_gravity="center"
                     />
-                <ImageView
-                    android:id="@+id/btnSignup2"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:src="@drawable/signup2"
-                    />
+                <EditText
+                    android:id="@+id/txtFullName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="25"
+                    android:hint="FullName"
+                    android:importantForAutofill="no"
+                    android:inputType="textPersonName"
+                    android:textStyle="italic"
+                    android:textSize="15dp"
+                    android:drawablePadding="20dp"
+                    android:drawableLeft="@drawable/ic_baseline_people_24"/>
+                <EditText
+                    android:id="@+id/txtUserName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="25"
+                    android:hint="UserName"
+                    android:textStyle="italic"
+                    android:drawablePadding="20dp"
+                    android:importantForAutofill="no"
+                    android:inputType="textPersonName"
+                    android:textSize="15dp"
+                    android:drawableLeft="@drawable/ic_baseline_people_24"/>
+                <EditText
+                    android:id="@+id/txtPassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="italic"
+                    android:drawablePadding="20dp"
+                    android:ems="25"
+                    android:hint="Password"
+                    android:importantForAutofill="no"
+                    android:inputType="textPassword"
+                    android:textSize="15dp"
+                    android:drawableLeft="@drawable/ic_baseline_vpn_key_24"/>
+                <EditText
+                    android:id="@+id/txtConfirmPass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textStyle="italic"
+                    android:ems="25"
+                    android:hint="Confirm Password"
+                    android:importantForAutofill="no"
+                    android:drawablePadding="20dp"
+                    android:inputType="textPassword"
+                    android:textSize="15dp"
+                    android:drawableLeft="@drawable/ic_baseline_vpn_key_24"/>
 
+                <EditText
+                    android:id="@+id/txtEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_baseline_email_black"
+                    android:drawablePadding="20dp"
+                    android:ems="25"
+                    android:textStyle="italic"
+                    android:hint="Email"
+                    android:importantForAutofill="no"
+                    android:inputType="textEmailAddress"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/txtPhone"
+                    android:drawablePadding="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="25"
+                    android:hint="PhoneNumber"
+                    android:importantForAutofill="no"
+                    android:inputType="textPersonName"
+                    android:textSize="15dp"
+                    android:textStyle="italic"
+                    android:drawableLeft="@drawable/ic_baseline_local_phone_24"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+                    <ImageView
+                        android:id="@+id/btnSignin2"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/signup_signin"
+                        />
+                    <ImageView
+                        android:id="@+id/btnSignup2"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/signup2"
+                        />
+
+                </LinearLayout>
             </LinearLayout>
-        </LinearLayout>
 
 
-    </androidx.cardview.widget.CardView>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bottomNav"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:menu="@menu/button_nav_menu"
+            app:itemIconTint="@color/purple_500"
+            app:itemTextColor="@color/black">
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 
 

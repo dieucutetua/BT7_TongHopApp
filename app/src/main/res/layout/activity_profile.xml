@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Profile"
-    android:background="@drawable/button2"
+
     android:orientation="vertical">
 
 
@@ -142,10 +142,9 @@
         </androidx.cardview.widget.CardView>
     </RelativeLayout>
     <LinearLayout
-        android:layout_width="360dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_gravity="center"
         android:layout_marginTop="20dp">
         <LinearLayout
             android:layout_width="match_parent"
@@ -156,7 +155,6 @@
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_marginRight="10dp"
-                android:layout_gravity="center"
                 android:background="@color/white"
                 android:src="@drawable/ic_baseline_email_24"/>
 
@@ -183,7 +181,6 @@
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_marginRight="10dp"
-                android:layout_gravity="center"
                 android:background="@color/white"
                 android:src="@drawable/ic_baseline_library_books_24"/>
 
@@ -209,14 +206,11 @@
             <ImageView
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:layout_gravity="center"
                 android:background="@color/white"
                 android:layout_marginRight="10dp"
                 android:src="@drawable/ic_baseline_phone_android_24"/>
 
             <TextView
-
-                android:layout_gravity="center"
                 android:background="@drawable/abc"
                 android:layout_width="250dp"
                 android:layout_height="match_parent"
@@ -237,14 +231,12 @@
             <ImageView
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:layout_gravity="center"
                 android:layout_marginRight="10dp"
                 android:background="@color/white"
                 android:src="@drawable/ic_baseline_person_add_24"/>
 
             <TextView
 
-                android:layout_gravity="center"
                 android:background="@drawable/abc"
                 android:layout_width="250dp"
                 android:layout_height="match_parent"
@@ -266,7 +258,6 @@
                 android:layout_width="40dp"
                 android:background="@color/white"
                 android:layout_height="40dp"
-                android:layout_gravity="center"
                 android:layout_marginRight="10dp"
                 android:src="@drawable/ic_baseline_forum_24"/>
 
@@ -275,7 +266,6 @@
                 android:background="@drawable/abc"
                 android:layout_height="match_parent"
                 android:gravity="center"
-                android:layout_gravity="center"
                 android:backgroundTint="@color/white"
                 android:paddingLeft="20dp"
                 android:text="Show all comments"
@@ -285,12 +275,21 @@
         </LinearLayout>
     </LinearLayout>
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="20dp"
-        android:backgroundTint="@color/endlime"
-        android:text="Follow me"
-        android:textColor="#fff" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bottomNav"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:menu="@menu/button_nav_menu"
+            app:itemIconTint="@color/purple_500"
+            app:itemTextColor="@color/black">
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </LinearLayout>
