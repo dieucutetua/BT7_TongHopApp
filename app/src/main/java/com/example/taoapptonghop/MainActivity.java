@@ -14,9 +14,11 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.tabs.TabLayout;
 
 public class MainActivity extends AppCompatActivity {
 
+    private TabLayout tabLayout;
     EditText editUserName, editPassword;
     ImageView buttonSignUp, buttonSignIn;
     @Override
@@ -41,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case R.id.list:
                         Toast.makeText(getApplicationContext(), "List",Toast.LENGTH_SHORT).show();
-                        Intent i2 = new Intent(MainActivity.this, Home_List.class);
+                        Intent i2 = new Intent(MainActivity.this, Main_List.class);
                         startActivity(i2);
                         break;
                     case R.id.signin:

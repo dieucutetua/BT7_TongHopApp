@@ -39,7 +39,7 @@ public class Profile extends AppCompatActivity {
                         break;
                     case R.id.list:
                         Toast.makeText(getApplicationContext(), "List",Toast.LENGTH_SHORT).show();
-                        Intent i2 = new Intent(Profile.this, Home_List.class);
+                        Intent i2 = new Intent(Profile.this, Main_List.class);
                         startActivity(i2);
                         break;
                     case R.id.signin:

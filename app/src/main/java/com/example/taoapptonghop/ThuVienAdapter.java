@@ -50,8 +50,8 @@ public class ThuVienAdapter extends RecyclerView.Adapter<ThuVienAdapter.ThuVienV
         private ImageView imgHinh;
         public ThuVienViewHolder(@NonNull View itemView) {
             super(itemView);
-            tvTacGia = itemView.findViewById(R.id.tv_name);
-            tvTenSach = itemView.findViewById(R.id.tv_infor);
+            tvTenSach = itemView.findViewById(R.id.tv_name);
+            tvTacGia = itemView.findViewById(R.id.tv_infor);
             tvViTri = itemView.findViewById(R.id.tv_vitri);
             imgHinh = itemView.findViewById(R.id.imgAvatar);
         }

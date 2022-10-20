@@ -40,7 +40,7 @@ public class Home extends AppCompatActivity {
                         break;
                     case R.id.list:
                         Toast.makeText(getApplicationContext(), "List",Toast.LENGTH_SHORT).show();
-                        Intent i2 = new Intent(Home.this, Home_List.class);
+                        Intent i2 = new Intent(Home.this, Main_List.class);
                         startActivity(i2);
                         break;
                     case R.id.signin:
@@ -71,7 +71,7 @@ public class Home extends AppCompatActivity {
         buttonListView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(Home.this, Home_List.class);
+                Intent i = new Intent(Home.this, Main_List.class);
                 startActivity(i);
             }
         });
