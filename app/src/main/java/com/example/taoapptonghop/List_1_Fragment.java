@@ -1,5 +1,6 @@
 package com.example.taoapptonghop;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -18,6 +19,7 @@ public class List_1_Fragment extends Fragment {
     private RecyclerView recThuVien;
     private List<ThuVien> thuVienList;
     private ThuVienAdapter thuVienAdapter;
+
 
 
     @Override
@@ -44,10 +46,30 @@ public class List_1_Fragment extends Fragment {
         thuVienList.add(thuvien5);
         thuVienList.add(thuvien6);
         thuVienList.add(thuvien7);
-        thuVienAdapter = new ThuVienAdapter(thuVienList);
+        thuVienAdapter = new ThuVienAdapter(thuVienList, new ThuVienAdapter.IClickItemThuVien() {
+            @Override
+            public void onClickThuVien(ThuVien thuVien) {
+                onClickGoToDeatail(thuVien);
+            }
+        });
         recThuVien.setAdapter(thuVienAdapter);
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getActivity());
         recThuVien.setLayoutManager(layoutManager);
         return view;
+
+
     }
+
+    public void onDestroy(){
+        super.onDestroy();
+    }
+    private void onClickGoToDeatail(ThuVien thuVien) {
+        Intent intent = new Intent(getContext(), DetailActivity.class);
+        Bundle bundle = new Bundle();
+        bundle.putSerializable("object_thuvien",thuVien);
+        intent.putExtras(bundle);
+        startActivity(intent);
+    }
+
+
 }

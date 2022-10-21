@@ -1,6 +1,8 @@
 package com.example.taoapptonghop;
 
-public class ThuVien {
+import java.io.Serializable;
+
+public class ThuVien implements Serializable {
     private String tenSach;
     private String chitiet;
     private String vitri;

@@ -1,9 +1,13 @@
 package com.example.taoapptonghop;
 
+import android.content.Context;
+import android.content.Intent;
+import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -13,8 +17,10 @@ import java.util.List;
 
 public class ThuVienAdapter extends RecyclerView.Adapter<ThuVienAdapter.ThuVienViewHolder>{
     private List<ThuVien> thuVienList;
+    IClickItemThuVien iClickItemThuVien;
 
-    public ThuVienAdapter(List<ThuVien> thuVienList) {
+    public ThuVienAdapter(List<ThuVien> thuVienList, IClickItemThuVien iClickItemThuVien) {
+        this.iClickItemThuVien = iClickItemThuVien;
         this.thuVienList = thuVienList;
     }
 
@@ -34,7 +40,15 @@ public class ThuVienAdapter extends RecyclerView.Adapter<ThuVienAdapter.ThuVienV
         holder.tvViTri.setText(thuVien.getVitri());
         holder.imgHinh.setImageResource(thuVien.getHinh());
 
+        holder.layoutItem.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                iClickItemThuVien.onClickThuVien(thuVien);
+            }
+        });
     }
+
+
 
     @Override
     public int getItemCount() {
@@ -46,14 +60,19 @@ public class ThuVienAdapter extends RecyclerView.Adapter<ThuVienAdapter.ThuVienV
 
     class ThuVienViewHolder extends RecyclerView.ViewHolder{
 
+        private RelativeLayout layoutItem;
         private TextView tvTenSach,tvTacGia,tvViTri;
         private ImageView imgHinh;
         public ThuVienViewHolder(@NonNull View itemView) {
             super(itemView);
+            layoutItem = itemView.findViewById(R.id.layout_item);
             tvTenSach = itemView.findViewById(R.id.tv_name);
             tvTacGia = itemView.findViewById(R.id.tv_infor);
             tvViTri = itemView.findViewById(R.id.tv_vitri);
             imgHinh = itemView.findViewById(R.id.imgAvatar);
         }
+    }
+    public interface IClickItemThuVien {
+        void onClickThuVien(ThuVien thuVien);
     }
 }

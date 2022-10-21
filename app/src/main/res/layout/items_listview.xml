@@ -4,9 +4,10 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="10dp"
+    android:id="@+id/layout_item"
     android:background="@drawable/gradientitem">
 
-    <ImageView
+    <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/imgAvatar"
         android:layout_width="100dp"
         android:layout_height="100dp"
@@ -31,12 +32,22 @@
         android:fontFamily="sans-serif-condensed-light"
         android:paddingLeft="20dp"
         android:textSize="15dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_infor"
+        android:id="@+id/tv"
+        android:layout_marginRight="20dp"
+        android:textAlignment="textEnd"
+        android:textStyle="bold"
+        android:text="Vị trí"
+        android:textSize="10dp" />
 
     <TextView
         android:id="@+id/tv_vitri"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/tv_infor"
+        android:layout_below="@id/tv"
         android:layout_marginRight="20dp"
         android:textAlignment="textEnd"
         android:hint="Vị trí "
