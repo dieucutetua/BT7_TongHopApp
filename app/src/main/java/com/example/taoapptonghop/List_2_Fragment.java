@@ -19,13 +19,12 @@ public class List_2_Fragment extends Fragment {
     private RecyclerView recThuVien;
     private List<ThuVien> thuVienList;
     private ThuVienAdapter thuVienAdapter;
-    @Override
+
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-
-        View view = inflater.inflate(R.layout.fragment_list_1_, container, false);
-        recThuVien = (RecyclerView) view.findViewById(R.id.rc_list);
+        View view = inflater.inflate(R.layout.fragment_list_2_, container, false);
+        recThuVien = (RecyclerView) view.findViewById(R.id.rc_list2);
         thuVienList = new ArrayList<>();
 
         ThuVien thuvien1 = new ThuVien("Pháp luật đại cương", "Đại Cương", "A1+A2", R.drawable.img_list2_pldc);
@@ -53,15 +52,15 @@ public class List_2_Fragment extends Fragment {
 
     }
 
-    public void onDestroy(){
+    public void onDestroy() {
         super.onDestroy();
     }
+
     private void onClickGoToDeatail(ThuVien thuVien) {
         Intent intent = new Intent(getContext(), DetailActivity.class);
         Bundle bundle = new Bundle();
-        bundle.putSerializable("object_thuvien",thuVien);
+        bundle.putSerializable("object_thuvien", thuVien);
         intent.putExtras(bundle);
         startActivity(intent);
     }
-
 }
